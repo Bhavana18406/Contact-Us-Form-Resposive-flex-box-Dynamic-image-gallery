@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dynamic Image Gallery</h1>
+            <p>Add and manage your favorite images</p>
+        </header>
+
+        <div class="upload-section">
+            <div class="upload-box" id="uploadBox">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Drag & Drop images here or click to browse</p>
+                <input type="file" id="fileInput" accept="image/*" multiple>
+            </div>
+            <div class="controls">
+                <button id="clearAllBtn" class="btn danger">Clear All</button>
+                <button id="shuffleBtn" class="btn secondary">Shuffle</button>
+            </div>
+        </div>
+
+        <div class="gallery" id="gallery"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
